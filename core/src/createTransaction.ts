@@ -21,11 +21,11 @@ export class CreateTransactionError extends Error {
  * Optional parameters for creating a StreamPay transaction.
  */
 export interface CreateTransactionParams {
-    /** `splToken` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
+    /** `splToken` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
     splToken?: PublicKey;
-    /** `reference` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
+    /** `reference` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
     reference?: PublicKey | PublicKey[];
-    /** `memo` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
+    /** `memo` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
     memo?: string;
 }
 
@@ -36,8 +36,8 @@ export interface CreateTransactionParams {
  *
  * @param connection - A connection to the cluster.
  * @param payer - `PublicKey` of the payer.
- * @param recipient - `recipient` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient)
- * @param amount - `amount` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount)
+ * @param recipient - `recipient` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient)
+ * @param amount - `amount` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount)
  * @param {CreateTransactionParams} createTransactionParams - Additional parameters
  * @param createTransactionParams.splToken
  * @param createTransactionParams.reference

@@ -6,17 +6,17 @@ import { URL_PROTOCOL } from './constants';
  * Optional query parameters to encode in a StreamPay URL.
  */
 export interface EncodeURLParams {
-    /** `amount` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount) */
+    /** `amount` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount) */
     amount?: BigNumber;
-    /** `splToken` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
+    /** `splToken` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
     splToken?: PublicKey;
-    /** `reference` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
+    /** `reference` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
     reference?: PublicKey | PublicKey[];
-    /** `label` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#label) */
+    /** `label` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#label) */
     label?: string;
-    /** `message` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#message)  */
+    /** `message` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#message)  */
     message?: string;
-    /** `memo` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
+    /** `memo` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
     memo?: string;
 }
 
@@ -24,7 +24,7 @@ export interface EncodeURLParams {
  * Required and optional URL components to encode in a StreamPay URL.
  */
 export interface EncodeURLComponents extends EncodeURLParams {
-    /** `recipient` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient) */
+    /** `recipient` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient) */
     recipient: PublicKey;
 }
 

@@ -21,7 +21,7 @@ npm manifest:
       "name": "@fyfy/pay",
       "version": "0.1.0",
       "author": "Fyfy Maintainers <maintainers@fyfy.io>",
-      "repository": "https://github.com/streamdao/stream-pay",
+      "repository": "https://github.com/stream-protocol/stream-pay",
       "license": "Apache-2.0",
       "type": "module",
       "sideEffects": false,

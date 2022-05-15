@@ -1,9 +1,9 @@
 ---
-title: Solana Pay Specification
+title: Stream Pay Specification
 slug: /spec
 ---
 
-# Solana Pay Specification
+# Stream Pay Specification
 
 ## Summary
 
@@ -15,11 +15,11 @@ This standard draws inspiration from [BIP 21](https://github.com/bitcoin/bips/bl
 
 ## Motivation
 
-A standard URL protocol for requesting native SOL and SPL Token transfers allows for a better user experience across wallets and apps in the Solana ecosystem.
+A standard URL protocol for requesting native SOL, USDC and SPL Token transfers allows for a better user experience across wallets and apps in the Solana ecosystem.
 
 Applications should ensure that a payment transaction has been confirmed and contains a transfer of the expected amount and type before they release the goods or services being sold.
 
-Mobile wallets should ideally register to handle the URL scheme and provide a seamless yet secure experience when Solana Pay URLs are encountered in the environment.
+Mobile wallets should ideally register to handle the URL scheme and provide a seamless yet secure experience when Stream Pay / Solana Pay URLs are encountered in the environment.
 
 By standardizing a simple approach to solving those problems, we ensure compatibility of applications and wallets.
 
@@ -37,7 +37,7 @@ Instead, to request an SPL token transfer, the `spl-token` field must be used to
 
 ### Amount
 
-A single `amount` field is allowed as an optional query parameter. The value must be a non-negative integer or decimal number of "user" units. For SOL, that's SOL and not lamports. For tokens, `uiAmountString` and not `amount` (reference: [Token Balances Structure](https://docs.solana.com/developing/clients/jsonrpc-api#token-balances-structure)).
+A single `amount` field is allowed as an optional query parameter. The value must be a non-negative integer or decimal number of "user" units. For SOL or USDC, that's SOL and not lamports. For tokens, `uiAmountString` and not `amount` (reference: [Token Balances Structure](https://docs.solana.com/developing/clients/jsonrpc-api#token-balances-structure)).
 
 `0` is a valid value. If the value is a decimal number less than `1`, it must have a leading `0` before the `.`. Scientific notation is prohibited.
 
@@ -82,19 +82,19 @@ Wallets should display the memo to the user. The SPL Memo instruction must be in
 URL describing a transfer for 1 SOL:
 
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=1&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId1234
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=1&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId1234
 ```
 
 URL describing a transfer for 0.01 USDC
 
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=0.01&spl-token=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=0.01&spl-token=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678
 ```
 
 URL describing a generic SOL transfer. The user must be prompted for the exact amount.
 
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?label=Michael&memo=4321ABCD
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?label=Michael&memo=4321ABCD
 ```
 
 ## Extensions
@@ -103,4 +103,4 @@ Additional fields may be incorporated into this specification to enable new use 
 
 Please open a Github issue to propose changes to the specification and solicit feedback from application and wallet developers.
 
-[An actual example of such a proposal.](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoissues/26)
+[An actual example of such a proposal.](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoissues/26)

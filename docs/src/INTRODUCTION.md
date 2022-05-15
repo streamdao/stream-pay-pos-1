@@ -30,11 +30,11 @@ The Solana blockchain confirms transactions in less than a second and costs on a
 
 ### Accept payments in your web app
 
-Use the [`@solana/pay` JavaScript SDK](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/core) to start accepting payments in your app today.
+Use the [`@solana/pay` JavaScript SDK](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/core) to start accepting payments in your app today.
 
 ### Accept payments in person
 
-Run the open-source [StreamPay - Point of Sale app](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/point-of-sale) to start accepting payments in-person.
+Run the open-source [StreamPay - Point of Sale app](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/point-of-sale) to start accepting payments in-person.
 
 ## Getting Involved
 

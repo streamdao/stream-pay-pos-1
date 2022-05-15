@@ -28,7 +28,7 @@ const config = {
                     sidebarCollapsed: false,
                     path: 'src',
                     routeBasePath: '/',
-                    editUrl: 'https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/docs',
+                    editUrl: 'https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/docs',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -51,7 +51,7 @@ const config = {
                 srcDark: 'img/logo-horizontal-dark.svg',
             },
             items: [{
-                    href: 'https://github.com/streamdao/stream-pay',
+                    href: 'https://github.com/stream-protocol/stream-pay',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -68,15 +68,15 @@ const config = {
                     title: 'Community',
                     items: [{
                             label: 'Discord',
-                            href: 'https://discordapp.com/invite/',
+                            href: 'https://discord.gg/F6j96Z7WzG',
                         },
                         {
                             label: 'Twitter',
-                            href: 'https://twitter.com/dao_stream',
+                            href: 'https://twitter.com/stream_protocol',
                         },
                         {
                             label: 'Forums',
-                            href: 'https://forums.streamdao.org',
+                            href: 'https://forum.streamprotocol.org',
                         },
                     ],
                 },
@@ -84,7 +84,7 @@ const config = {
                     title: 'More',
                     items: [{
                         label: 'GitHub',
-                        href: 'https://github.com/streamdao/stream-pay',
+                        href: 'https://github.com/stream-protocol/stream-pay',
                     }, ],
                 },
             ],

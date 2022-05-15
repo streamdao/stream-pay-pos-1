@@ -21,10 +21,10 @@ export class ValidateTransactionSignatureError extends Error {
  *
  * @param connection - A connection to the cluster.
  * @param signature -  The signature to validate.
- * @param recipient - `recipient` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient)
- * @param amount - `amount` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount)
- * @param splToken - `splToken` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token)
- * @param reference -`reference` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference)
+ * @param recipient - `recipient` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient)
+ * @param amount - `amount` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount)
+ * @param splToken - `splToken` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token)
+ * @param reference -`reference` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference)
  * @param {Finality} finality - A subset of Commitment levels, which are at least optimistically confirmed
  */
 export async function validateTransactionSignature(

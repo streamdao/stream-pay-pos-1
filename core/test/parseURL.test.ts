@@ -7,11 +7,11 @@ describe('parseURL', () => {
         describe('when given correct params', () => {
             it('should parse successfully', () => {
                 const url =
-                    'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=0.000000001&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
+                    'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=0.000000001&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
 
                 const { recipient, amount, splToken, reference, label, message, memo } = parseURL(url);
 
-                expect(recipient.equals(new PublicKey('Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV'))).toBe(true);
+                expect(recipient.equals(new PublicKey('5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV'))).toBe(true);
                 expect(amount!.eq(new BigNumber('0.000000001'))).toBe(true);
                 expect(splToken).toBeUndefined();
                 expect(reference).toHaveLength(1);
@@ -23,11 +23,11 @@ describe('parseURL', () => {
 
             it('should parse with spl-token', () => {
                 const url =
-                    'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=1.01&spl-token=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
+                    'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=1.01&spl-token=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
 
                 const { recipient, amount, splToken, reference, label, message, memo } = parseURL(url);
 
-                expect(recipient.equals(new PublicKey('Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV'))).toBe(true);
+                expect(recipient.equals(new PublicKey('5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV'))).toBe(true);
                 expect(amount!.eq(new BigNumber('1.01'))).toBe(true);
                 expect(splToken!.equals(new PublicKey('82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny'))).toBe(true);
                 expect(reference).toBeUndefined();
@@ -38,11 +38,11 @@ describe('parseURL', () => {
 
             it('should parse without an amount', () => {
                 const url =
-                    'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
+                    'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
 
                 const { recipient, amount, splToken, reference, label, message, memo } = parseURL(url);
 
-                expect(recipient.equals(new PublicKey('Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV'))).toBe(true);
+                expect(recipient.equals(new PublicKey('5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV'))).toBe(true);
                 expect(amount).toBeUndefined();
                 expect(splToken).toBeUndefined();
                 expect(reference).toHaveLength(1);
@@ -71,19 +71,19 @@ describe('parseURL', () => {
         });
 
         it.each([['1milliondollars'], [-0.1], [-100]])('throws an error on invalid amount: %p', (amount) => {
-            const url = `solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=${amount}`;
+            const url = `solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=${amount}`;
 
             expect(() => parseURL(url)).toThrow('amount invalid');
         });
 
         it('throws an error on invalid token', () => {
-            const url = 'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=1&spl-token=0xffff';
+            const url = 'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=1&spl-token=0xffff';
 
             expect(() => parseURL(url)).toThrow('token invalid');
         });
 
         it('throws an error on invalid reference', () => {
-            const url = 'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=1&reference=0xffff';
+            const url = 'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=1&reference=0xffff';
 
             expect(() => parseURL(url)).toThrow('reference invalid');
         });

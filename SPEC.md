@@ -65,17 +65,17 @@ Wallets should display the memo to the user. The SPL Memo instruction must be in
 ## Examples
 URL describing a transfer for 1 SOL:
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=1&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId1234
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=1&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId1234
 ```
 
 URL describing a transfer for 0.01 USDC
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=0.01&spl-token=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=0.01&spl-token=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678
 ```
 
 URL describing a generic SOL transfer. The user must be prompted for the exact amount.
 ```
-solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV&label=Michael&memo=4321ABCD
+solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV&label=Michael&memo=4321ABCD
 ```
 
 ## Extensions
@@ -84,4 +84,4 @@ Additional fields may be incorporated into this specification to enable new use 
 
 Please open a Github issue to propose changes to the specification and solicit feedback from application and wallet developers.
 
-[An actual example of such a proposal.](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoissues/26)
+[An actual example of such a proposal.](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoissues/26)

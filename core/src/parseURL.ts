@@ -13,19 +13,19 @@ export class ParseURLError extends Error {
  * Parsed components of a StreamPay URL.
  */
 export interface ParsedURL {
-    /** `recipient` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient) */
+    /** `recipient` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#recipient) */
     recipient: PublicKey;
-    /** `amount` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount) */
+    /** `amount` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#amount) */
     amount: BigNumber | undefined;
-    /** `splToken` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
+    /** `splToken` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#spl-token) */
     splToken: PublicKey | undefined;
-    /** `reference` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
+    /** `reference` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference) */
     reference: PublicKey[] | undefined;
-    /** `label` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#label) */
+    /** `label` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#label) */
     label: string | undefined;
-    /** `message` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#message) */
+    /** `message` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#message) */
     message: string | undefined;
-    /** `memo` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
+    /** `memo` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#memo) */
     memo: string | undefined;
 }
 

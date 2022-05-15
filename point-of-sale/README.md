@@ -42,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### With Git
 ```shell
-git clone https://github.com/streamdao/stream-pay.git
+git clone https://github.com/stream-protocol/stream-pay.git
 ```
 
 #### With Github CLI
@@ -112,14 +112,15 @@ You can deploy this point of sale app to Vercel with a few clicks. Fork the proj
 
 Once the deployment finishes, navigate to
 ```
-https://stream-pay.vercel.app/?recipient=Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV=streampay
+https://stream-pay.vercel.app/?recipient=5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV=streampay
 ```
 
 ## License
 
-The StreamPay Point of Sale app is open source and available under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for more info.
+The StreamPay - Point of Sale app is open source and available under the Apache License, Version 2.0. See the [LICENSE](./LICENSE) file for more info.
 
 <!-- Links -->
 
 [1]: https://help.phantom.app/hc/en-us/articles/4406388623251-How-to-create-a-new-wallet
+[2]: https://usdcfaucet.com/
 [3]: https://solfaucet.com/

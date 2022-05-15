@@ -1,6 +1,6 @@
 import { Keypair, PublicKey } from '@solana/web3.js';
 
-export const MERCHANT_WALLET = new PublicKey('Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV');
+export const MERCHANT_WALLET = new PublicKey('5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV');
 
 // Keypair purely for testing purposes. Exists only on devnet
 export const CUSTOMER_WALLET = Keypair.fromSecretKey(

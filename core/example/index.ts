@@ -12,7 +12,7 @@ import { createTransaction, encodeURL, findTransactionSignature, parseURL, valid
     const originalReference = Keypair.generate().publicKey;
 
     const NATIVE_URL =
-        'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV' +
+        'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV' +
         '?amount=0.01' +
         '&reference=' +
         encodeURIComponent(String(originalReference)) +
@@ -21,7 +21,7 @@ import { createTransaction, encodeURL, findTransactionSignature, parseURL, valid
         '&memo=OrderId5678';
 
     const USDC_URL =
-        'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV' +
+        'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV' +
         '?amount=0.01' +
         '&spl-token=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v' +
         '&reference=' +

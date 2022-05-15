@@ -17,19 +17,19 @@ The Solana blockchain confirms transactions in less than a second and costs on a
 ## How to use StreamPOS / StreamPay
 
 ### Accept payments in your web app
-Use the [`@solana/pay` JavaScript SDK](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/core) to start accepting payments in your app today.
+Use the [`@solana/pay` JavaScript SDK](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/core) to start accepting payments in your app today.
 
 ### Accept payments in person
-Run the open-source [StreamPOS - Point of Sale app](https://stream-pay-point-of-sale.vercel.app/new?recipient=Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV&label=Fyfy+Pay) to start accepting payments in-person.
+Run the open-source [StreamPOS - Point of Sale app](https://stream-pay-point-of-sale.vercel.app/new?recipient=5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV&label=Stream+Pay) to start accepting payments in-person.
 
 ## Getting Involved
 
 StreamPay is an open standard to facilitate commerce on Solana. We are looking for more contributors to help develop the ecosystem. Here are a few ideas if you're looking to get involved.
 
 ### eCommerce Platform Integrations
-To get as many merchants accepting payments on USDC or Solana as possible we need to provide easy ways to set up StreamPay on all eCommerce platforms. 
+To get as many merchants accepting payments on USDC, STRM or Solana as possible we need to provide easy ways to set up StreamPay on all eCommerce platforms. 
 
-Stream Protocol has started a reference implementation for Shopify which you can see [here](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/shopify/shopify) to get a sense of how this might work.
+Stream Protocol has started a reference implementation for Shopify which you can see [here](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/shopify/shopify) to get a sense of how this might work.
 
 Here are some of the top eCommerce platforms that we're looking to integrate to:
 

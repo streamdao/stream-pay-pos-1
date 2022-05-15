@@ -46,7 +46,7 @@ import { parseURL } from '@solana/pay';
  * The parameters needed to create the correct transaction is encoded within the URL
  */
 const url =
-    'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=0.01&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
+    'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=0.01&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
 const { recipient, amount, splToken, reference, label, message, memo } = parseURL(url);
 ```
 
@@ -69,7 +69,7 @@ The `payer` **should** be the public key of the current users' wallet.
 import { parseURL, createTransaction } from '@solana/pay';
 
 const url =
-    'solana:Bn7yqxJ9FsB1x8MViRfnJmcLR46tzZZ3MQsBeHYfD7VV?amount=0.01&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
+    'solana:5jihQavcfDS3PSyDqFxtznhTSD26TCrjx1TrXPbB4jkV?amount=0.01&reference=82ZJ7nbGpixjeDCmEhUcmwXYfvurzAgGdtSMuHnUgyny&label=Michael&message=Thanks%20for%20all%20the%20fish&memo=OrderId5678';
 const { recipient, amount, splToken, reference, label, message, memo } = parseURL(url);
 
 /**
@@ -151,6 +151,6 @@ URLs can be embedded in the environment in web pages, QR codes, NFC tags and pot
 
 <!-- References -->
 
-[9]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L13
-[10]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L27
-[11]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L35
+[9]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L13
+[10]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L27
+[11]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateWalletInteraction.ts#L35

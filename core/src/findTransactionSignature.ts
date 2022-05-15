@@ -13,7 +13,7 @@ export class FindTransactionSignatureError extends Error {
  * @throws if signature can't be found
  *
  * @param connection - A connection to the cluster.
- * @param reference - `reference` in the [StreamPay spec](https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference)
+ * @param reference - `reference` in the [StreamPay spec](https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/SPEC.md#reference)
  * @param {SignaturesForAddressOptions} options - Options for `getSignaturesForAddress`.
  * @param {Finality} finality - A subset of Commitment levels, which are at least optimistically confirmed.
  */

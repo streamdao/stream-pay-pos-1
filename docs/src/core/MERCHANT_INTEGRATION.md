@@ -98,14 +98,14 @@ console.log('2. 🛍 Simulate a customer checkout \n');
 const recipient = new PublicKey('MERCHANT_WALLET');
 const amount = new BigNumber(20);
 const reference = new Keypair().publicKey;
-const label = 'Jungle Cats store';
-const message = 'Jungle Cats store - your order - #001234';
+const label = 'Stream Pay demo store';
+const message = 'Stream Pay demo store - your order - #001234';
 const memo = 'JC#4098';
 
 /**
  * Create a payment request link
  *
- * Solana Pay uses a standard URL scheme across wallets for native SOL and SPL Token payments.
+ * Steam Pay / Solana Pay uses a standard URL scheme across wallets for native SOL and SPL Token payments.
  * Several parameters are encoded within the link representing an intent to collect payment from a customer.
  */
 console.log('3. 💰 Create a payment request link \n');
@@ -165,7 +165,7 @@ Now that you've created a payment link, you need a way to show it to your custom
 /**
  * Create a payment request link
  *
- * Solana Pay uses a standard URL scheme across wallets for native SOL and SPL Token payments.
+ * Stream Pay / Solana Pay uses a standard URL scheme across wallets for native SOL and SPL Token payments.
  * Several parameters are encoded within the link representing an intent to collect payment from a customer.
  */
 console.log('3. 💰 Create a payment request link \n');
@@ -371,8 +371,8 @@ The steps outlined above prevents:
 [1]: https://github.com/solana-labs/qr-code-styling
 [2]: https://spl.solana.com/memo
 [3]: https://github.com/solana-labs/solana/issues/19535
-[4]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/point-of-sale
-[5]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memotree/master/core/example/payment-flow-merchant
-[6]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateCheckout.ts
-[7]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/main.ts#L61
-[8]: https://github.com/streamdao/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/main.ts#L105
+[4]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/point-of-sale
+[5]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memotree/master/core/example/payment-flow-merchant
+[6]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/simulateCheckout.ts
+[7]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/main.ts#L61
+[8]: https://github.com/stream-protocol/stream-pay/blob/master/SPEC.md#memoblob/master/core/example/payment-flow-merchant/main.ts#L105
